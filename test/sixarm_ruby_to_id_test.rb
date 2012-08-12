@@ -3,7 +3,7 @@ require 'minitest/autorun'
 require 'simplecov'
 SimpleCov.start
 
-['array','date','nil','object','string'].map{|x|
+['array','date','nil','numeric','object','string'].map{|x|
   require "sixarm_ruby_to_id_test/#{x}_test.rb"
 }
 

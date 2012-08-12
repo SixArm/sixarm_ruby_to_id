@@ -51,7 +51,7 @@
         null,
         null,
         1,
-        5,
+        6,
         null
       ],
       "/home/sixarm/git/sixarm_ruby_to_id/lib/sixarm_ruby_to_id/array.rb": [
@@ -192,6 +192,23 @@
         1,
         null,
         null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/sixarm/git/sixarm_ruby_to_id/lib/sixarm_ruby_to_id/numeric.rb": [
+        1,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
         null,
         null,
         null,
@@ -398,6 +415,27 @@
         null,
         null
       ],
+      "/home/sixarm/git/sixarm_ruby_to_id/test/sixarm_ruby_to_id_test/numeric_test.rb": [
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
       "/home/sixarm/git/sixarm_ruby_to_id/test/sixarm_ruby_to_id_test/object_test.rb": [
         null,
         1,
@@ -503,6 +541,6 @@
         null
       ]
     },
-    "timestamp": 1344738268
+    "timestamp": 1344739840
   }
 }

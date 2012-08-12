@@ -1,8 +1,11 @@
 Gem::Specification.new do |s|
 
+  SOURCES             = ['array','date','nil','object','string']
+  TESTERS             = []
+
   s.name              = "sixarm_ruby_to_id"
   s.summary           = "SixArm.com » Ruby » ToId converts types to ids and uuids"
-  s.version           = "1.0.2"
+  s.version           = "1.0.3"
   s.author            = "SixArm"
   s.email             = "sixarm@sixarm.com"
   s.homepage          = "http://sixarm.com/"
@@ -14,8 +17,8 @@ Gem::Specification.new do |s|
   s.has_rdoc          = true
 
   top_files           = [".gemtest", "Rakefile", "README.md", "VERSION"]
-  lib_files           = ["lib/#{s.name}.rb"]
-  test_files          = ["test/#{s.name}_test.rb"]
+  lib_files           = ["lib/#{s.name}.rb"] + SOURCES.map{|x| "lib/#{s.name}/#{x}.rb"}
+  test_files          = ["test/#{s.name}_test.rb"] + SOURCES.map{|x| "test/#{s.name}_test/#{x}_test.rb"} + TESTERS.map{|x| "test/#{s.name}_test/#{x}"}
 
   s.files             = top_files + lib_files + test_files
   s.test_files        = test_files

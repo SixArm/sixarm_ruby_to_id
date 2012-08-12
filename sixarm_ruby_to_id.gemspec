@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_to_id"
   s.summary           = "SixArm.com » Ruby » ToId converts types to ids and uuids"
-  s.version           = "1.0.0"
+  s.version           = "1.0.2"
   s.author            = "SixArm"
   s.email             = "sixarm@sixarm.com"
   s.homepage          = "http://sixarm.com/"

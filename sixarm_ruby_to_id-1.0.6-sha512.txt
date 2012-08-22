@@ -1,1 +1,0 @@
-04865eb3d1372f06f2fbe20df9226cec297d09a1ba9d7cec1e3fd8628bb7f6a34f2d5cbe8a5d6018d543f2fe9ebd8da9514eadefd44de6fa558dda9337135bc9  sixarm_ruby_to_id-1.0.6.gem

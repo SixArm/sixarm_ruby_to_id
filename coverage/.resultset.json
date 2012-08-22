@@ -152,6 +152,8 @@
         null,
         null,
         null,
+        null,
+        null,
         null
       ],
       "/home/sixarm/git/sixarm_ruby_to_id/lib/sixarm_ruby_to_id/nil.rb": [
@@ -415,6 +417,22 @@
         null,
         null,
         null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
@@ -604,6 +622,6 @@
         null
       ]
     },
-    "timestamp": 1345601623
+    "timestamp": 1345602472
   }
 }

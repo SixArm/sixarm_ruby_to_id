@@ -18,17 +18,33 @@ describe Hash do
 
     end
 
+    describe "with fields for year, month, day any of which are blank strings #=> nil" do
+
+      it "year is blank #=> nil" do
+        {year: "", month: "12", day: "31"}.to_date_id.must_equal nil
+      end
+      
+      it "month is blank #=> nil" do
+        {year: "2000", month: "", day: "31"}.to_date_id.must_equal nil
+      end
+      
+      it "day is blank #=> nil" do
+        {year: "2000", month: "12", day: ""}.to_date_id.must_equal nil
+      end
+
+    end
+
     describe "without fields for year, or month, or day #=> nil" do
 
-      it "returns nil if it doesn't have a year" do
+      it "missing year #=> nil" do
         {month: "12", day: "31"}.to_date_id.must_equal nil
       end
       
-      it "returns nil if it doesn't have a month" do
+      it "missing month #=> nil" do
         {year: "2000", day: "31"}.to_date_id.must_equal nil
       end
       
-      it "returns nil if it doesn't have a day" do
+      it "missing day #=> nil" do
         {year: "2000", month: "12"}.to_date_id.must_equal nil
       end
 

@@ -1,11 +1,11 @@
 Gem::Specification.new do |s|
 
-  SOURCES             = ['array','date','nil','numeric','object','string']
+  SOURCES             = ['array', 'date', 'hash', 'nil', 'numeric', 'object', 'string']
   TESTERS             = []
 
   s.name              = "sixarm_ruby_to_id"
   s.summary           = "SixArm.com » Ruby » ToId converts types to ids and uuids"
-  s.version           = "1.0.4"
+  s.version           = "1.0.6"
   s.author            = "SixArm"
   s.email             = "sixarm@sixarm.com"
   s.homepage          = "http://sixarm.com/"

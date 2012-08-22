@@ -23,27 +23,27 @@
       <img src="./assets/0.5.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2012-08-11T19:50:40-07:00">2012-08-11T19:50:40-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-08-21T19:13:43-07:00">2012-08-21T19:13:43-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">62.64%</span></span>
+    (<span class="covered_percent"><span class="red">62.24%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.89
+         0.87
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>13</b> files in total.
-    <b>174</b> relevant lines. 
-    <span class="green"><b>109</b> lines covered</span> and
-    <span class="red"><b>65</b> lines missed </span>
+    <b>15</b> files in total.
+    <b>196</b> relevant lines. 
+    <span class="green"><b>122</b> lines covered</span> and
+    <span class="red"><b>74</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -66,7 +66,7 @@
         <td>2</td>
         <td>2</td>
         <td>0</td>
-        <td>3.5</td>
+        <td>4.0</td>
       </tr>
       
       <tr>
@@ -87,6 +87,16 @@
         <td>2</td>
         <td>1</td>
         <td>0.7</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#a75a3e9d41c08a5d54d09b7c9423ed391e82a42e" class="src_link" title="lib/sixarm_ruby_to_id/hash.rb">lib/sixarm_ruby_to_id/hash.rb</a></td>
+        <td class="red strong">33.33 %</td>
+        <td>18</td>
+        <td>6</td>
+        <td>2</td>
+        <td>4</td>
+        <td>0.3</td>
       </tr>
       
       <tr>
@@ -147,6 +157,16 @@
         <td>5</td>
         <td>1</td>
         <td>0.8</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#ae55153da256ee7ca2a0ab4021583d94d25a8f68" class="src_link" title="test/sixarm_ruby_to_id_test/hash_test.rb">test/sixarm_ruby_to_id_test/hash_test.rb</a></td>
+        <td class="red strong">68.75 %</td>
+        <td>41</td>
+        <td>16</td>
+        <td>11</td>
+        <td>5</td>
+        <td>0.7</td>
       </tr>
       
       <tr>
@@ -252,11 +272,11 @@
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">['array','date','nil','numeric','object','string'].map{|x|</code>
+          <code class="ruby">['array','date','hash','nil','numeric','object','string'].map{|x|</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="7">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="7">
+          <span class="hits">7</span>
           
           <code class="ruby">  require File.dirname(__FILE__) + &quot;/sixarm_ruby_to_id/#{x}.rb&quot;</code>
         </li>
@@ -708,7 +728,7 @@
         <li class="never" data-hits="" data-linenumber="6">
           
           
-          <code class="ruby">  #    Date.today..to_date_id </code>
+          <code class="ruby">  #    Date.today.to_date_id </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
@@ -754,6 +774,132 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="a75a3e9d41c08a5d54d09b7c9423ed391e82a42e">
+  <div class="header">
+    <h3>lib/sixarm_ruby_to_id/hash.rb</h3>
+    <h4><span class="red">33.33 %</span> covered</h4>
+    <div>
+      <b>6</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Hash</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  # Cast me to a date id by parsing fields for year, month, day.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  #    hash = {year: &quot;2000&quot;, month: &quot;12&quot;, day: &quot;31&quot;}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  #    hash.to_date_id</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  #    #=&gt; &quot;2000-12-31&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def to_date_id</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">    year  = self[&quot;year&quot;]  || self[:year]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">    month = self[&quot;month&quot;] || self[:month]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">    day   = self[&quot;day&quot;]   || self[:day]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">    year &amp;&amp; month &amp;&amp; day ? sprintf(&quot;%4.4d-%2.2d-%2.2d&quot;, year.to_i, month.to_i, day.to_i) : nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">end</code>
@@ -2392,6 +2538,270 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="ae55153da256ee7ca2a0ab4021583d94d25a8f68">
+  <div class="header">
+    <h3>test/sixarm_ruby_to_id_test/hash_test.rb</h3>
+    <h4><span class="red">68.75 %</span> covered</h4>
+    <div>
+      <b>16</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
+      <span class="red"><b>5</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"># -*- coding: utf-8 -*-</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require 'minitest/autorun'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require 'sixarm_ruby_to_id'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe Hash do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;#to_date_id casts to a date id&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    describe &quot;with fields for year, month, day #=&gt; YYYY-MM-DD&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;works with string keys&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">        {&quot;year&quot; =&gt; &quot;2000&quot;, &quot;month&quot; =&gt; &quot;12&quot;, &quot;day&quot; =&gt; &quot;31&quot;}.to_date_id.must_equal &quot;2000-12-31&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;works with symbol keys&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="16">
+          
+          
+          <code class="ruby">        {year: &quot;2000&quot;, month: &quot;12&quot;, day: &quot;31&quot;}.to_date_id.must_equal &quot;2000-12-31&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    describe &quot;without fields for year, or month, or day #=&gt; nil&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;returns nil if it doesn't have a year&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="24">
+          
+          
+          <code class="ruby">        {month: &quot;12&quot;, day: &quot;31&quot;}.to_date_id.must_equal nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">      </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;returns nil if it doesn't have a month&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="28">
+          
+          
+          <code class="ruby">        {year: &quot;2000&quot;, day: &quot;31&quot;}.to_date_id.must_equal nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">      </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;returns nil if it doesn't have a day&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="32">
+          
+          
+          <code class="ruby">        {year: &quot;2000&quot;, month: &quot;12&quot;}.to_date_id.must_equal nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
           
           
           <code class="ruby"></code>

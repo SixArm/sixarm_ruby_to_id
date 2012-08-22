@@ -58,9 +58,15 @@ Cast a comma-separated list to string ids:
 
     "a,b,c".to_s_ids #=> ["a", "b", "c"]
 
+Cast a hash of year, month, day to a date id YYYY-MM-DD:
+
+    {year: "2000", month: "12", day: "31"}.to_date_id #=> "2000-12-31"
+
+
 
 ## Changes
 
+* 2012-08-21 1.0.6 Add Hash#to_date_id
 * 2012-08-11 1.0.0 Publish
 
 

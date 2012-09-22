@@ -20,15 +20,17 @@ describe String do
 
   describe "#to_stint_id" do
     it "casts me to a stint id [YYYY-MM-DD, YYYY-MM-DD]" do
-      " 2000-12-30-2000-12-31 ".to_stint_id.must_equal "2000-12-30-2000-12-31"
-      " X000-12-30-2000-12-31 ".to_stint_id.must_equal nil
+      " 2000-12-30..2000-12-31 ".to_stint_id.must_equal "2000-12-30..2000-12-31"
+      " 2000-12-30...2000-12-31 ".to_stint_id.must_equal "2000-12-30...2000-12-31"
+      " 2000-12-30-2000-12-31 ".to_stint_id.must_equal nil
+      " 2000-12-30 2000-12-31 ".to_stint_id.must_equal nil
     end
   end
 
   describe "#to_stint_ids" do
     it "casts me to a list of stint ids" do 
-      " 2000-12-30-2000-12-31 , 2001-12-30-2001-12-31 , 2002-12-30-2002-12-31 ".to_stint_ids.must_equal ["2000-12-30-2000-12-31", "2001-12-30-2001-12-31", "2002-12-30-2002-12-31"]
-      " X000-12-30-2000-12-31 , Y001-12-30-2001-12-31 , Z002-12-30-2002-12-31 ".to_stint_ids.must_equal [nil, nil, nil]
+      " 2000-12-30..2000-12-31 , 2001-12-30..2001-12-31 , 2002-12-30..2002-12-31 ".to_stint_ids.must_equal ["2000-12-30..2000-12-31", "2001-12-30..2001-12-31", "2002-12-30..2002-12-31"]
+      " A000-12-30..2000-12-31 , B001-12-30..2001-12-31 , C002-12-30..2002-12-31 ".to_stint_ids.must_equal [nil, nil, nil]
     end
   end
 

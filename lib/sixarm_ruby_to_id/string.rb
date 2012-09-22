@@ -25,12 +25,25 @@ class String
 
   # Cast me to a stint id.
   #
-  #     " 2000-12-30-2000-12-31".to_stint_id
+  # The string is two ISO dates in YYYY-MM-DD.
+  #
+  # The separator is either:
+  #
+  #   * two dots ".." to include the stop date
+  #
+  #   * three dots "..." to exclude the stop date.
+  #
+  # Examples:
+  #
+  #     " 2000-12-30..2000-12-31".to_stint_id
+  #     #=> "2000-12-30-2000-12-31"
+  #
+  #     " 2000-12-30...2000-12-31".to_stint_id
   #     #=> "2000-12-30-2000-12-31"
   #
   def to_stint_id
     s = self.strip
-    s =~ /\A\d\d\d\d-\d\d-\d\d-\d\d\d\d-\d\d-\d\d\z/ ? s : nil
+    s =~ /\A\d\d\d\d-\d\d-\d\d\.\.\.?\d\d\d\d-\d\d-\d\d\z/ ? s : nil
   end
 
 

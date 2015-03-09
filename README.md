@@ -1,4 +1,4 @@
-# SixArm.com » Ruby » <br> ToId gem
+# Ruby » <br> ToId gem
 
 * Doc: <http://sixarm.com/sixarm_ruby_to_id/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_to_id>

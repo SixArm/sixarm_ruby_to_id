@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-require 'minitest/autorun'
-require 'simplecov'
+require "minitest/autorun"
+require "simplecov"
 SimpleCov.start
 
 ['array','date','hash','nil','numeric','object','string'].map{|x|

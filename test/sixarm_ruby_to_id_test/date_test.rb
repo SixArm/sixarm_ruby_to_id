@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-require 'minitest/autorun'
-require 'sixarm_ruby_to_id'
+require "minitest/autorun"
+require "sixarm_ruby_to_id"
 
 describe Date do
 

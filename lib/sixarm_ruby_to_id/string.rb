@@ -1,5 +1,8 @@
-class String
+# -*- coding: utf-8 -*-
 
+# Cast a string to an id.
+#
+class String
 
   # Cast me to a date id.
   #
@@ -11,7 +14,6 @@ class String
     s =~ /\A\d\d\d\d-\d\d-\d\d\z/ ? s : nil
   end
 
-
   # Cast me to a list of date ids.
   # The string is comma-separated.
   #
@@ -21,7 +23,6 @@ class String
   def to_date_ids
     split(/,/).map{|x| x.to_date_id}
   end
-
 
   # Cast me to a stint id.
   #
@@ -46,7 +47,6 @@ class String
     s =~ /\A\d\d\d\d-\d\d-\d\d\.\.\.?\d\d\d\d-\d\d-\d\d\z/ ? s : nil
   end
 
-
   # Cast me to a list of stint ids.
   # The string is comma-separated.
   #
@@ -57,7 +57,6 @@ class String
     split(/,/).map{|x| x.to_stint_id}
   end
 
-
   # Cast me to an integer id.
   #
   #     " 1 ".to_i_id
@@ -66,7 +65,6 @@ class String
   def to_i_id
     strip.to_i
   end
-
 
   # Cast me (a comma-separated list) to a list of integer ids.
   # The string is comma-separated.
@@ -78,7 +76,6 @@ class String
     split(/,/).map{|x| x.to_i_id}
   end
 
-
   # Cast me to a string id.
   #
   #     " a "
@@ -87,7 +84,6 @@ class String
   def to_s_id
     strip
   end
-
 
   # Cast me to a list of string ids.
   # The string is comma-separated.
@@ -99,7 +95,6 @@ class String
     split(/,/).to_s_ids
   end
 
-
   # Cast me to a string uuid.
   #
   #     " 00000000-0000-0000-0000-000000000000 ".to_s_uuids
@@ -108,7 +103,6 @@ class String
   def to_s_uuid
     strip.match(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/) ? $& : nil
   end
-
 
   # Cast me to a list of string ids.
   # The string is comma-separated.

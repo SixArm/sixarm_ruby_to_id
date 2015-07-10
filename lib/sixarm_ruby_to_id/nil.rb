@@ -1,5 +1,8 @@
-class NilClass
+# -*- coding: utf-8 -*-
 
+# Cast a nil to an id.
+#
+class NilClass
 
   # Always return nil.
   #
@@ -7,13 +10,11 @@ class NilClass
     nil
   end
 
-
   # Always return nil.
   #
   def to_date_ids
     nil
   end
-
 
   # Always return nil.
   #
@@ -21,13 +22,11 @@ class NilClass
     nil
   end
 
-
   # Always return nil.
   #
   def to_stint_ids
     nil
   end
-
 
   # Always return nil.
   #
@@ -35,13 +34,11 @@ class NilClass
     nil
   end
 
-
   # Always return nil.
   #
   def to_i_ids
     nil
   end
-
 
   # Always return nil.
   #
@@ -49,13 +46,10 @@ class NilClass
     nil
   end
 
-
   # Always return nil.
   #
   def to_s_ids
     nil
   end
 
-
 end
-

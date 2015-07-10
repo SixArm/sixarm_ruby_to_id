@@ -13,7 +13,7 @@ describe Date do
     end
   end
 
-  describe "#to_date_id" do
+  describe "#to_date_ids" do
     it "casts to a date id YYYY-MM-DD list" do
       Date.parse("2000-12-31").to_date_ids.must_equal ["2000-12-31"]
     end

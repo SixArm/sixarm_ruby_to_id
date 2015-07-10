@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 require "minitest/autorun"
+require "simplecov"
+SimpleCov.start
+
 require "sixarm_ruby_to_id"
 
 describe String do
@@ -28,7 +31,7 @@ describe String do
   end
 
   describe "#to_stint_ids" do
-    it "casts me to a list of stint ids" do 
+    it "casts me to a list of stint ids" do
       " 2000-12-30..2000-12-31 , 2001-12-30..2001-12-31 , 2002-12-30..2002-12-31 ".to_stint_ids.must_equal ["2000-12-30..2000-12-31", "2001-12-30..2001-12-31", "2002-12-30..2002-12-31"]
       " A000-12-30..2000-12-31 , B001-12-30..2001-12-31 , C002-12-30..2002-12-31 ".to_stint_ids.must_equal [nil, nil, nil]
     end
@@ -77,5 +80,3 @@ describe String do
   end
 
 end
-
-

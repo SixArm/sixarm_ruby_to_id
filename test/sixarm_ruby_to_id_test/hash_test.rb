@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 require "minitest/autorun"
+require "simplecov"
+SimpleCov.start
+
 require "sixarm_ruby_to_id"
 
 describe Hash do
@@ -23,11 +26,11 @@ describe Hash do
       it "year is blank #=> nil" do
         {year: "", month: "12", day: "31"}.to_date_id.must_equal nil
       end
-      
+
       it "month is blank #=> nil" do
         {year: "2000", month: "", day: "31"}.to_date_id.must_equal nil
       end
-      
+
       it "day is blank #=> nil" do
         {year: "2000", month: "12", day: ""}.to_date_id.must_equal nil
       end
@@ -39,11 +42,11 @@ describe Hash do
       it "missing year #=> nil" do
         {month: "12", day: "31"}.to_date_id.must_equal nil
       end
-      
+
       it "missing month #=> nil" do
         {year: "2000", day: "31"}.to_date_id.must_equal nil
       end
-      
+
       it "missing day #=> nil" do
         {year: "2000", month: "12"}.to_date_id.must_equal nil
       end
@@ -53,5 +56,3 @@ describe Hash do
   end
 
 end
-
-

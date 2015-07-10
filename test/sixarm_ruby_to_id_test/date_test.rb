@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 require "minitest/autorun"
+require "simplecov"
+SimpleCov.start
+
 require "sixarm_ruby_to_id"
 
 describe Date do
@@ -10,5 +13,10 @@ describe Date do
     end
   end
 
-end
+  describe "#to_date_id" do
+    it "casts to a date id YYYY-MM-DD list" do
+      Date.parse("2000-12-31").to_date_ids.must_equal ["2000-12-31"]
+    end
+  end
 
+end

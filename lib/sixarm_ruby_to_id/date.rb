@@ -18,7 +18,7 @@ class Date
   #    Date.today.to_date_id
   #    #=> "2000-12-31"
   #
-  def to_date_id
+  def to_date_ids
     [self.to_date_id]
   end
 

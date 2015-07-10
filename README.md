@@ -1,12 +1,19 @@
 # SixArm.com » Ruby » <br> ToId parses an object to id
 
+<!--HEADER-OPEN-->
+
 [![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_to_id.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_to_id)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_to_id.png)](https://travis-ci.org/SixArm/sixarm_ruby_to_id)
 
+* Git: <https://github.com/sixarm/sixarm_ruby_to_id>
 * Doc: <http://sixarm.com/sixarm_ruby_to_id/doc>
-* Gem: <http://rubygems.org/gems/sixarm_ruby_to_id>
-* Repo: <http://github.com/sixarm/sixarm_ruby_to_id>
-* Email: Joel Parker Henderson, <joel@sixarm.com>
+* Gem: <https://rubygems.org/gems/sixarm_ruby_to_id>
+* Contact: Joel Parker Henderson, <joel@sixarm.com>
+* Changes: See CHANGES.md file.
+* License: See LICENSE.md file.
+* Helping: See CONTRIBUTING.md file.
+
+<!--HEADER-SHUT-->
 
 ## Introduction
 
@@ -19,32 +26,29 @@ We use this gem to help santize web application inputs, for example HTTP query s
 Want to help? We're happy to get pull requests.
 
 
-## Install quickstart
+<!--INSTALL-OPEN-->
 
-Install:
+## Install
 
-    gem install sixarm_ruby_to_id
+To install using a Gemfile, add this:
 
-Bundler:
+    gem "sixarm_ruby_to_id", ">= 1.0.9, < 2"
 
-    gem "sixarm_ruby_to_id", ">=1.0.9", "<2"
+To install using the command line, run this:
 
-Require:
+    gem install sixarm_ruby_to_id -v ">= 1.0.9, < 2"
+
+To install using the command with high security, run this:
+
+    wget http://sixarm.com/sixarm.pem
+    gem cert --add sixarm.pem && gem sources --add http://sixarm.com
+    gem install sixarm_ruby_to_id -v ">= 1.0.9, < 2" --trust-policy HighSecurity
+
+To require the gem in your code:
 
     require "sixarm_ruby_to_id"
 
-
-## Install with security (optional)
-
-To enable high security for all our gems:
-
-    wget http://sixarm.com/sixarm.pem
-    gem cert --add sixarm.pem
-    gem sources --add http://sixarm.com
-
-To install with high security:
-
-    gem install sixarm_ruby_to_id --trust-policy HighSecurity
+<!--INSTALL-SHUT-->
 
 
 ## Examples

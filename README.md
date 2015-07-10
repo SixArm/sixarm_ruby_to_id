@@ -1,4 +1,7 @@
-# Ruby » <br> ToId gem
+# SixArm.com » Ruby » <br> ToId parses an object to id
+
+[![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_to_id.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_to_id)
+[![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_to_id.png)](https://travis-ci.org/SixArm/sixarm_ruby_to_id)
 
 * Doc: <http://sixarm.com/sixarm_ruby_to_id/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_to_id>
@@ -24,7 +27,7 @@ Install:
 
 Bundler:
 
-    gem "sixarm_ruby_to_id", "~>1.0.0"	
+    gem "sixarm_ruby_to_id", ">=1.0.9", "<2"
 
 Require:
 

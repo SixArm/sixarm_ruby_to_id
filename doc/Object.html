@@ -6,18 +6,18 @@
 <title>
   Class: Object
   
-    &mdash; Documentation by YARD 0.8.1
+    &mdash; Documentation by YARD 0.8.7.6
   
 </title>
 
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
 
-  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   hasFrames = window.top.frames.main ? true : false;
   relpath = '';
-  framesUrl = "frames.html#!" + escape(window.location.href);
+  framesUrl = "frames.html#!Object.html";
 </script>
 
 
@@ -91,7 +91,18 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Cast an object to an id.</p>
 
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -124,7 +135,31 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Call #id.to_i on the object; this is a decent default.</p>
+<p>Cast me to an int id.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_i_ids-instance_method" title="#to_i_ids (instance method)">- (Object) <strong>to_i_ids</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Cast me to a list of int ids.</p>
 </div></span>
   
 </li>
@@ -151,8 +186,14 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Call #id.to_i on the object; this is a decent default. Subclasses will
-override this, e.g. String, Array, Numeric, etc.</p>
+<p>Cast me to an int id.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>Object</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='period'>.</span><span class='id identifier rubyid_to_i_ids'>to_i_ids</span>
+<span class='comment'>#=&gt; 70186724200120
+</span></code></pre>
+
+<p>Call #object_id.to_i on the object; this is a decent default. Subclasses
+will override this, e.g. String, Array, Numeric, etc.</p>
 
 
   </div>
@@ -166,15 +207,63 @@ override this, e.g. String, Array, Numeric, etc.</p>
       <pre class="lines">
 
 
-6
-7
-8</pre>
+15
+16
+17</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/object.rb', line 6</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/object.rb', line 15</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_i_id'>to_i_id</span>
-  <span class='id identifier rubyid_id'>id</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
+  <span class='id identifier rubyid_object_id'>object_id</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="to_i_ids-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="Object (class)">Object</a></span></tt>) <strong>to_i_ids</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Cast me to a list of int ids.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>Object</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='period'>.</span><span class='id identifier rubyid_to_i_ids'>to_i_ids</span>
+<span class='comment'>#=&gt; [70186724200120]
+</span></code></pre>
+
+<p>Call #object_id.to_i on the object; this is a decent default. Subclasses
+will override this, e.g. String, Array, Numeric, etc.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+27
+28
+29</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/object.rb', line 27</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_to_i_ids'>to_i_ids</span>
+  <span class='lbracket'>[</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_to_i_id'>to_i_id</span><span class='rbracket'>]</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -186,9 +275,9 @@ override this, e.g. String, Array, Numeric, etc.</p>
 </div>
 
     <div id="footer">
-  Generated on Sat Aug 11 18:54:41 2012 by
+  Generated on Thu Jul  9 23:45:42 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.8.1 (ruby-1.9.3).
+  0.8.7.6 (ruby-2.2.2).
 </div>
 
   </body>

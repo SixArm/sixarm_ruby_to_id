@@ -6,18 +6,18 @@
 <title>
   Class: String
   
-    &mdash; Documentation by YARD 0.8.1
+    &mdash; Documentation by YARD 0.8.7.6
   
 </title>
 
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
 
-  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   hasFrames = window.top.frames.main ? true : false;
   relpath = '';
-  framesUrl = "frames.html#!" + escape(window.location.href);
+  framesUrl = "frames.html#!String.html";
 </script>
 
 
@@ -99,7 +99,18 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Cast a string to an id.</p>
 
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -377,8 +388,9 @@
     
 <p>Cast me to a date id.</p>
 
-<pre class="code ruby"><code><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> 2000-12-31 </span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_date_id'>to_date_id</span>
-<span class='comment'>#=&gt; &quot;2000-12-31&quot;</span></code></pre>
+<pre class="code ruby"><code class="ruby"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> 2000-12-31 </span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_date_id'>to_date_id</span>
+<span class='comment'>#=&gt; &quot;2000-12-31&quot;
+</span></code></pre>
 
 
   </div>
@@ -392,13 +404,13 @@
       <pre class="lines">
 
 
-9
-10
-11
-12</pre>
+12
+13
+14
+15</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 9</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 12</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_date_id'>to_date_id</span>
   <span class='id identifier rubyid_s'>s</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_strip'>strip</span>
@@ -423,8 +435,9 @@
     
 <p>Cast me to a list of date ids. The string is comma-separated.</p>
 
-<pre class="code ruby"><code><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>2000-12-31,2001-12-31,2002-12-31</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_date_id'>to_date_id</span>
-<span class='comment'>#=&gt; [&quot;2000-12-31&quot;, &quot;2001-12-31&quot;, &quot;2002-12-31&quot;]</span></code></pre>
+<pre class="code ruby"><code class="ruby"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>2000-12-31,2001-12-31,2002-12-31</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_date_id'>to_date_id</span>
+<span class='comment'>#=&gt; [&quot;2000-12-31&quot;, &quot;2001-12-31&quot;, &quot;2002-12-31&quot;]
+</span></code></pre>
 
 
   </div>
@@ -438,12 +451,12 @@
       <pre class="lines">
 
 
-21
-22
-23</pre>
+23
+24
+25</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 21</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 23</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_date_ids'>to_date_ids</span>
   <span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>,</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_x'>x</span><span class='op'>|</span> <span class='id identifier rubyid_x'>x</span><span class='period'>.</span><span class='id identifier rubyid_to_date_id'>to_date_id</span><span class='rbrace'>}</span>
@@ -467,8 +480,9 @@
     
 <p>Cast me to an integer id.</p>
 
-<pre class="code ruby"><code><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> 1 </span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_i_id'>to_i_id</span>
-<span class='comment'>#=&gt; 1</span></code></pre>
+<pre class="code ruby"><code class="ruby"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> 1 </span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_i_id'>to_i_id</span>
+<span class='comment'>#=&gt; 1
+</span></code></pre>
 
 
   </div>
@@ -482,12 +496,12 @@
       <pre class="lines">
 
 
-53
-54
-55</pre>
+65
+66
+67</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 53</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 65</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_i_id'>to_i_id</span>
   <span class='id identifier rubyid_strip'>strip</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
@@ -512,8 +526,9 @@
 <p>Cast me (a comma-separated list) to a list of integer ids. The string is
 comma-separated.</p>
 
-<pre class="code ruby"><code><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>1,2,3</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_s_ids'>to_s_ids</span>
- <span class='comment'>#=&gt; [1, 2, 3]</span></code></pre>
+<pre class="code ruby"><code class="ruby"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>1,2,3</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_s_ids'>to_s_ids</span>
+ <span class='comment'>#=&gt; [1, 2, 3]
+</span></code></pre>
 
 
   </div>
@@ -527,12 +542,12 @@ comma-separated.</p>
       <pre class="lines">
 
 
-64
-65
-66</pre>
+75
+76
+77</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 64</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 75</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_i_ids'>to_i_ids</span>
   <span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>,</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_x'>x</span><span class='op'>|</span> <span class='id identifier rubyid_x'>x</span><span class='period'>.</span><span class='id identifier rubyid_to_i_id'>to_i_id</span><span class='rbrace'>}</span>
@@ -556,8 +571,9 @@ comma-separated.</p>
     
 <p>Cast me to a string id.</p>
 
-<pre class="code ruby"><code><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> a </span><span class='tstring_end'>&quot;</span></span>
-<span class='comment'>#=&gt; &quot;a&quot;</span></code></pre>
+<pre class="code ruby"><code class="ruby"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> a </span><span class='tstring_end'>&quot;</span></span>
+<span class='comment'>#=&gt; &quot;a&quot;
+</span></code></pre>
 
 
   </div>
@@ -571,12 +587,12 @@ comma-separated.</p>
       <pre class="lines">
 
 
-74
-75
-76</pre>
+84
+85
+86</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 74</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 84</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_s_id'>to_s_id</span>
   <span class='id identifier rubyid_strip'>strip</span>
@@ -600,8 +616,9 @@ comma-separated.</p>
     
 <p>Cast me to a list of string ids. The string is comma-separated.</p>
 
-<pre class="code ruby"><code><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>a,b,c</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_s_ids'>to_s_ids</span>
-<span class='comment'>#=&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]</span></code></pre>
+<pre class="code ruby"><code class="ruby"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>a,b,c</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_s_ids'>to_s_ids</span>
+<span class='comment'>#=&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]
+</span></code></pre>
 
 
   </div>
@@ -615,12 +632,12 @@ comma-separated.</p>
       <pre class="lines">
 
 
-85
-86
-87</pre>
+94
+95
+96</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 85</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 94</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_s_ids'>to_s_ids</span>
   <span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>,</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_s_ids'>to_s_ids</span>
@@ -644,8 +661,9 @@ comma-separated.</p>
     
 <p>Cast me to a string uuid.</p>
 
-<pre class="code ruby"><code><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> 00000000-0000-0000-0000-000000000000 </span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_s_uuids'>to_s_uuids</span>
-<span class='comment'>#=&gt; &quot;00000000-0000-0000-0000-000000000000&quot;</span></code></pre>
+<pre class="code ruby"><code class="ruby"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> 00000000-0000-0000-0000-000000000000 </span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_s_uuids'>to_s_uuids</span>
+<span class='comment'>#=&gt; &quot;00000000-0000-0000-0000-000000000000&quot;
+</span></code></pre>
 
 
   </div>
@@ -659,12 +677,12 @@ comma-separated.</p>
       <pre class="lines">
 
 
-95
-96
-97</pre>
+103
+104
+105</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 95</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 103</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_s_uuid'>to_s_uuid</span>
   <span class='id identifier rubyid_strip'>strip</span><span class='period'>.</span><span class='id identifier rubyid_match'>match</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='op'>?</span> <span class='backref'>$&amp;</span> <span class='op'>:</span> <span class='kw'>nil</span>
@@ -688,7 +706,7 @@ comma-separated.</p>
     
 <p>Cast me to a list of string ids. The string is comma-separated.</p>
 
-<pre class="code ruby"><code>&quot;00000000-0000-0000-0000-000000000000,11111111-1111-1111-1111-111111111111&quot;.to_s_uuids
+<pre class="code ruby"><code class="ruby">&quot;00000000-0000-0000-0000-000000000000,11111111-1111-1111-1111-111111111111&quot;.to_s_uuids
 #=&gt; [
   &quot;00000000-0000-0000-0000-000000000000&quot;
   &quot;11111111-1111-1111-1111-111111111111&quot;
@@ -706,12 +724,12 @@ comma-separated.</p>
       <pre class="lines">
 
 
-109
-110
-111</pre>
+116
+117
+118</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 109</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 116</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_s_uuids'>to_s_uuids</span>
   <span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>,</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_s_uuids'>to_s_uuids</span>
@@ -735,8 +753,22 @@ comma-separated.</p>
     
 <p>Cast me to a stint id.</p>
 
-<pre class="code ruby"><code><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> 2000-12-30-2000-12-31</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_stint_id'>to_stint_id</span>
-<span class='comment'>#=&gt; &quot;2000-12-30-2000-12-31&quot;</span></code></pre>
+<p>The string is two ISO dates in YYYY-MM-DD.</p>
+
+<p>The separator is either:</p>
+
+<pre class="code ruby"><code class="ruby">* two dots &quot;..&quot; to include the stop date
+
+* three dots &quot;...&quot; to exclude the stop date.</code></pre>
+
+<p>Examples:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> 2000-12-30..2000-12-31</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_stint_id'>to_stint_id</span>
+<span class='comment'>#=&gt; &quot;2000-12-30-2000-12-31&quot;
+</span>
+<span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> 2000-12-30...2000-12-31</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_stint_id'>to_stint_id</span>
+<span class='comment'>#=&gt; &quot;2000-12-30-2000-12-31&quot;
+</span></code></pre>
 
 
   </div>
@@ -750,17 +782,17 @@ comma-separated.</p>
       <pre class="lines">
 
 
-31
-32
-33
-34</pre>
+45
+46
+47
+48</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 31</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 45</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_stint_id'>to_stint_id</span>
   <span class='id identifier rubyid_s'>s</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_strip'>strip</span>
-  <span class='id identifier rubyid_s'>s</span> <span class='op'>=~</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\A\d\d\d\d-\d\d-\d\d-\d\d\d\d-\d\d-\d\d\z</span><span class='regexp_end'>/</span></span> <span class='op'>?</span> <span class='id identifier rubyid_s'>s</span> <span class='op'>:</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_s'>s</span> <span class='op'>=~</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\A\d\d\d\d-\d\d-\d\d\.\.\.?\d\d\d\d-\d\d-\d\d\z</span><span class='regexp_end'>/</span></span> <span class='op'>?</span> <span class='id identifier rubyid_s'>s</span> <span class='op'>:</span> <span class='kw'>nil</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -781,8 +813,9 @@ comma-separated.</p>
     
 <p>Cast me to a list of stint ids. The string is comma-separated.</p>
 
-<pre class="code ruby"><code><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>2000-12-30-2000-12-31,2001-12-30-2001-12-31,2002-12-30-2002-12-31</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_date_id'>to_date_id</span>
-<span class='comment'>#=&gt; [&quot;2000-12-30-2000-12-31&quot;], [&quot;2001-12-30-2001-12-31&quot;], [&quot;2002-12-30-2002-12-31&quot;]]</span></code></pre>
+<pre class="code ruby"><code class="ruby"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>2000-12-30-2000-12-31,2001-12-30-2001-12-31,2002-12-30-2002-12-31</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_date_id'>to_date_id</span>
+<span class='comment'>#=&gt; [&quot;2000-12-30-2000-12-31&quot;], [&quot;2001-12-30-2001-12-31&quot;], [&quot;2002-12-30-2002-12-31&quot;]]
+</span></code></pre>
 
 
   </div>
@@ -796,12 +829,12 @@ comma-separated.</p>
       <pre class="lines">
 
 
-43
-44
-45</pre>
+56
+57
+58</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 43</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_to_id/string.rb', line 56</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_stint_ids'>to_stint_ids</span>
   <span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>,</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_x'>x</span><span class='op'>|</span> <span class='id identifier rubyid_x'>x</span><span class='period'>.</span><span class='id identifier rubyid_to_stint_id'>to_stint_id</span><span class='rbrace'>}</span>
@@ -816,9 +849,9 @@ comma-separated.</p>
 </div>
 
     <div id="footer">
-  Generated on Sat Aug 11 18:54:41 2012 by
+  Generated on Thu Jul  9 23:45:42 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.8.1 (ruby-1.9.3).
+  0.8.7.6 (ruby-2.2.2).
 </div>
 
   </body>

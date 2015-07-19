@@ -2,8 +2,10 @@
 
 <!--HEADER-OPEN-->
 
-[![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_to_id.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_to_id)
+[![Gem Version](https://badge.fury.io/rb/sixarm_ruby_to_id.svg)](http://badge.fury.io/rb/sixarm_ruby_to_id)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_to_id.png)](https://travis-ci.org/SixArm/sixarm_ruby_to_id)
+[![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_to_id.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_to_id)
+[![Coverage Status](https://coveralls.io/repos/SixArm/sixarm_ruby_to_id/badge.svg?branch=master&service=github)](https://coveralls.io/github/SixArm/sixarm_ruby_to_id?branch=master)
 
 * Git: <https://github.com/sixarm/sixarm_ruby_to_id>
 * Doc: <http://sixarm.com/sixarm_ruby_to_id/doc>
@@ -32,17 +34,17 @@ Want to help? We're happy to get pull requests.
 
 To install using a Gemfile, add this:
 
-    gem "sixarm_ruby_to_id", ">= 1.0.9", "< 2"
+    gem "sixarm_ruby_to_id", ">= 1.1.0", "< 2"
 
 To install using the command line, run this:
 
-    gem install sixarm_ruby_to_id -v ">= 1.0.9, < 2"
+    gem install sixarm_ruby_to_id -v ">= 1.1.0, < 2"
 
 To install using the command line with high security, run this:
 
     wget http://sixarm.com/sixarm.pem
     gem cert --add sixarm.pem && gem sources --add http://sixarm.com
-    gem install sixarm_ruby_to_id -v ">= 1.0.9, < 2" --trust-policy HighSecurity
+    gem install sixarm_ruby_to_id -v ">= 1.1.0, < 2" --trust-policy HighSecurity
 
 To require the gem in your code:
 

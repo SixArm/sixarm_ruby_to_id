@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 require "minitest/autorun"
+require "coveralls"
 require "simplecov"
+Coveralls.wear!
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+  SimpleCov::Formatter::HTMLFormatter,
+  Coveralls::SimpleCov::Formatter
+]
 SimpleCov.start
-
-['array','date','hash','nil','numeric','object','string'].map{|x|
-  require "sixarm_ruby_to_id_test/#{x}_test.rb"
-}
-
-
+require "sixarm_ruby_to_id"

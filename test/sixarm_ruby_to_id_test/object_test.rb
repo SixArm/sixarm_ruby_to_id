@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-require "minitest/autorun"
-require "simplecov"
-SimpleCov.start
-
-require "sixarm_ruby_to_id"
+require "sixarm_ruby_to_id_test"
 
 class Mock
   def object_id

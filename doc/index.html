@@ -63,25 +63,35 @@
 
     <div id="content"><div id='filecontents'>
 <h1 id="label-SixArm.com+-C2-BB+Ruby+-C2-BB++ToId+parses+an+object+to+id">SixArm.com » Ruby » <br> ToId parses an object to id</h1>
-
-<p><a href="https://codeclimate.com/github/SixArm/sixarm_ruby_to_id"><img
-src="https://codeclimate.com/github/SixArm/sixarm_ruby_to_id.png"></a> <a
+<!--HEADER-OPEN-->
+<p><a href="http://badge.fury.io/rb/sixarm_ruby_to_id"><img
+src="https://badge.fury.io/rb/sixarm_ruby_to_id.svg"></a> <a
 href="https://travis-ci.org/SixArm/sixarm_ruby_to_id"><img
-src="https://travis-ci.org/SixArm/sixarm_ruby_to_id.png"></a></p>
+src="https://travis-ci.org/SixArm/sixarm_ruby_to_id.png"></a> <a
+href="https://codeclimate.com/github/SixArm/sixarm_ruby_to_id"><img
+src="https://codeclimate.com/github/SixArm/sixarm_ruby_to_id.png"></a> <a
+href="https://coveralls.io/github/SixArm/sixarm_ruby_to_id?branch=master"><img
+src="https://coveralls.io/repos/SixArm/sixarm_ruby_to_id/badge.svg?branch=master&service=github"></a></p>
 <ul><li>
+<p>Git: <a
+href="https://github.com/sixarm/sixarm_ruby_to_id">github.com/sixarm/sixarm_ruby_to_id</a></p>
+</li><li>
 <p>Doc: <a
 href="http://sixarm.com/sixarm_ruby_to_id/doc">sixarm.com/sixarm_ruby_to_id/doc</a></p>
 </li><li>
 <p>Gem: <a
-href="http://rubygems.org/gems/sixarm_ruby_to_id">rubygems.org/gems/sixarm_ruby_to_id</a></p>
+href="https://rubygems.org/gems/sixarm_ruby_to_id">rubygems.org/gems/sixarm_ruby_to_id</a></p>
 </li><li>
-<p>Repo: <a
-href="http://github.com/sixarm/sixarm_ruby_to_id">github.com/sixarm/sixarm_ruby_to_id</a></p>
-</li><li>
-<p>Email: Joel Parker Henderson, <a
+<p>Contact: Joel Parker Henderson, <a
 href="mailto:joel@sixarm.com">joel@sixarm.com</a></p>
+</li><li>
+<p>Changes: See CHANGES.md file.</p>
+</li><li>
+<p>License: See LICENSE.md file.</p>
+</li><li>
+<p>Helping: See CONTRIBUTING.md file.</p>
 </li></ul>
-
+<!--HEADER-SHUT-->
 <h2 id="label-Introduction">Introduction</h2>
 
 <p>Convert strings to various kinds of id types and uuid types.</p>
@@ -93,36 +103,29 @@ href="http://sixarm.com/sixarm_ruby_to_id/doc">sixarm.com/sixarm_ruby_to_id/doc<
 query strings and form input controls.</p>
 
 <p>Want to help? We&#39;re happy to get pull requests.</p>
+<!--INSTALL-OPEN-->
+<h2 id="label-Install">Install</h2>
 
-<h2 id="label-Install+quickstart">Install quickstart</h2>
+<p>To install using a Gemfile, add this:</p>
 
-<p>Install:</p>
-
-<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='id identifier rubyid_install'>install</span> <span class='id identifier rubyid_sixarm_ruby_to_id'>sixarm_ruby_to_id</span>
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_to_id</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&gt;= 1.1.0</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt; 2</span><span class='tstring_end'>&quot;</span></span>
 </code></pre>
 
-<p>Bundler:</p>
+<p>To install using the command line, run this:</p>
 
-<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_to_id</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&gt;=1.0.1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;2</span><span class='tstring_end'>&quot;</span></span>
-</code></pre>
+<pre class="code ruby"><code class="ruby">gem install sixarm_ruby_to_id -v &quot;&gt;= 1.1.0, &lt; 2&quot;</code></pre>
 
-<p>Require:</p>
+<p>To install using the command line with high security, run this:</p>
+
+<pre class="code ruby"><code class="ruby">wget http://sixarm.com/sixarm.pem
+gem cert --add sixarm.pem &amp;&amp; gem sources --add http://sixarm.com
+gem install sixarm_ruby_to_id -v &quot;&gt;= 1.1.0, &lt; 2&quot; --trust-policy HighSecurity</code></pre>
+
+<p>To require the gem in your code:</p>
 
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_to_id</span><span class='tstring_end'>&quot;</span></span>
 </code></pre>
-
-<h2 id="label-Install+with+security+-28optional-29">Install with security (optional)</h2>
-
-<p>To enable high security for all our gems:</p>
-
-<pre class="code ruby"><code class="ruby">wget http://sixarm.com/sixarm.pem
-gem cert --add sixarm.pem
-gem sources --add http://sixarm.com</code></pre>
-
-<p>To install with high security:</p>
-
-<pre class="code ruby"><code class="ruby">gem install sixarm_ruby_to_id --trust-policy HighSecurity</code></pre>
-
+<!--INSTALL-SHUT-->
 <h2 id="label-Examples">Examples</h2>
 
 <p>Cast a string to an integer id:</p>
@@ -148,7 +151,7 @@ and dash locations:</p>
 </div></div>
 
     <div id="footer">
-  Generated on Thu Jul  9 23:45:42 2015 by
+  Generated on Sat Jul 18 19:51:19 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.2.2).
 </div>

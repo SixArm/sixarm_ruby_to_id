@@ -1,5 +1,6 @@
 # Changes
 
+* 2017-08-13 1.1.1 Update to Ruby 2.4, spdx licenses, rake test, etc.
 * 2015-07-18 1.1.0 Improve quality assurance
 * 2015-07-07 1.0.9 Update gemspec to use file manifest
 * 2012-09-21 1.0.8 Change stint format to use range dots like "x..y"

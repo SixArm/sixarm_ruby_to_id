@@ -6,7 +6,7 @@ describe String do
   describe "#to_date_id" do
     it "casts me to a date id YYYY-MM-DD" do
       " 2000-12-31 ".to_date_id.must_equal "2000-12-31"
-      " X000-12-31 ".to_date_id.must_equal nil
+      " X000-12-31 ".to_date_id.must_be_nil
     end
   end
 
@@ -21,8 +21,8 @@ describe String do
     it "casts me to a stint id [YYYY-MM-DD, YYYY-MM-DD]" do
       " 2000-12-30..2000-12-31 ".to_stint_id.must_equal "2000-12-30..2000-12-31"
       " 2000-12-30...2000-12-31 ".to_stint_id.must_equal "2000-12-30...2000-12-31"
-      " 2000-12-30-2000-12-31 ".to_stint_id.must_equal nil
-      " 2000-12-30 2000-12-31 ".to_stint_id.must_equal nil
+      " 2000-12-30-2000-12-31 ".to_stint_id.must_be_nil
+      " 2000-12-30 2000-12-31 ".to_stint_id.must_be_nil
     end
   end
 
@@ -64,7 +64,7 @@ describe String do
   describe "#to_s_uuid" do
     it "casts me to a string uuid (by using strip and match)" do
       " 0000aaaa-00aa-00aa-00aa-000000aaaaaa ".to_s_uuid.must_equal "0000aaaa-00aa-00aa-00aa-000000aaaaaa"
-      " X ".to_s_uuid.must_equal nil
+      " X ".to_s_uuid.must_be_nil
     end
   end
 

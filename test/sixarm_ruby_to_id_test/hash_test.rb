@@ -20,15 +20,15 @@ describe Hash do
     describe "with fields for year, month, day any of which are blank strings #=> nil" do
 
       it "year is blank #=> nil" do
-        {year: "", month: "12", day: "31"}.to_date_id.must_equal nil
+        {year: "", month: "12", day: "31"}.to_date_id.must_be_nil
       end
 
       it "month is blank #=> nil" do
-        {year: "2000", month: "", day: "31"}.to_date_id.must_equal nil
+        {year: "2000", month: "", day: "31"}.to_date_id.must_be_nil
       end
 
       it "day is blank #=> nil" do
-        {year: "2000", month: "12", day: ""}.to_date_id.must_equal nil
+        {year: "2000", month: "12", day: ""}.to_date_id.must_be_nil
       end
 
     end
@@ -36,15 +36,15 @@ describe Hash do
     describe "without fields for year, or month, or day #=> nil" do
 
       it "missing year #=> nil" do
-        {month: "12", day: "31"}.to_date_id.must_equal nil
+        {month: "12", day: "31"}.to_date_id.must_be_nil
       end
 
       it "missing month #=> nil" do
-        {year: "2000", day: "31"}.to_date_id.must_equal nil
+        {year: "2000", day: "31"}.to_date_id.must_be_nil
       end
 
       it "missing day #=> nil" do
-        {year: "2000", month: "12"}.to_date_id.must_equal nil
+        {year: "2000", month: "12"}.to_date_id.must_be_nil
       end
 
     end

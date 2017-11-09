@@ -1,6 +1,6 @@
 # SixArm.com → Ruby → <br> ToId parses an object to id
 
-<!--HEADER-OPEN-->
+<!--header-open-->
 
 [![Gem Version](https://badge.fury.io/rb/sixarm_ruby_to_id.svg)](http://badge.fury.io/rb/sixarm_ruby_to_id)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_to_id.png)](https://travis-ci.org/SixArm/sixarm_ruby_to_id)
@@ -13,7 +13,7 @@
 * Contact: Joel Parker Henderson, <joel@sixarm.com>
 * Project: [Changes](CHANGES.md), [License](LICENSE.md), [Contributing](CONTRIBUTING.md).
 
-<!--HEADER-SHUT-->
+<!--header-shut-->
 
 ## Introduction
 
@@ -26,7 +26,7 @@ We use this gem to help santize web application inputs, for example HTTP query s
 Want to help? We're happy to get pull requests.
 
 
-<!--INSTALL-OPEN-->
+<!--install-opent-->
 
 ## Install
 
@@ -46,7 +46,7 @@ To require the gem in your code:
 
     require 'sixarm_ruby_to_id'
 
-<!--INSTALL-SHUT-->
+<!--install-shut-->
 
 
 ## Examples

@@ -1,6 +1,6 @@
 # Changes
 
-* 2018-02-05 1.1.4 Update SimpleCov syntax
+* 2018-06-22 2.0.0 Update to Ruby 2.5, testing gems, etc.
 * 2017-08-14 1.1.3 Fix deprecations
 * 2017-08-14 1.1.2 Update minitest expectations
 * 2017-08-13 1.1.1 Update to Ruby 2.4, spdx licenses, rake test, etc.
